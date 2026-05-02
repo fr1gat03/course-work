@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PersonalFinanceManager.Application/PersonalFinanceManager.Application.csproj" />
+    <Project Path="src/PersonalFinanceManager.Domain/PersonalFinanceManager.Domain.csproj" />
+    <Project Path="src/PersonalFinanceManager.Infrastructure/PersonalFinanceManager.Infrastructure.csproj" />
+    <Project Path="src/PersonalFinanceManager.Presentation/PersonalFinanceManager.Presentation.csproj" />
+  </Folder>
+</Solution>
