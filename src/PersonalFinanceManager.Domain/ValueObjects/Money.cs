@@ -44,4 +44,11 @@ public readonly struct Money : IEquatable<Money>
     public bool Equals(Money other) => Amount == other.Amount && Currency == other.Currency;
 
     public override bool Equals(object? obj) => obj is Money other && Equals(other);
+
+    public override int GetHashCode() => HashCode.Combine(Amount, Currency);
+
+    public override string ToString() => $"{Amount} {Currency}";
+
+    public static bool operator ==(Money left, Money right) => left.Equals(right);
+    public static bool operator !=(Money left, Money right) => !left.Equals(right);
 }
